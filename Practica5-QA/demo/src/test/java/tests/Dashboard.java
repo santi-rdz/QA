@@ -17,7 +17,6 @@ public class Dashboard extends BaseTest {
     dashboardPage.clickQuickLaunch("Leave");
     dashboardPage.waitForUrlContains("leave");
     Assert.assertTrue(driver.getCurrentUrl().contains("leave"));
-
   }
   @Test
   void visibleWidget(){

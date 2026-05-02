@@ -4,17 +4,11 @@ import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.pages.RecruitePage;
 
 public class RecruitTest extends BaseTest {
-
-  @BeforeTest
-  void setup() {
-    super.setup();
-  }
 
   @BeforeMethod
   void goToCandidates() {

@@ -3,14 +3,14 @@ package tests;
 import java.util.List;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.pages.PimPage;
 
 public class PimTest extends BaseTest {
 
-  @BeforeTest
+  @BeforeMethod
   void setup() {
     super.setup();
     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList");
