@@ -58,7 +58,7 @@ public class FormPage extends Base {
     waitFor(cityInput).sendKeys(org.openqa.selenium.Keys.ENTER);
   }
   public void clickSubmit(){
-    click(submitBtn);
+    waitFor(submitBtn).sendKeys(org.openqa.selenium.Keys.ENTER);
   }
 
   public boolean isSuccessModalDisplayed(){
